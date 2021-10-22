@@ -1,0 +1,158 @@
+//mixin'ы
+
+
+//Шрифт по умолчанию
+$font-family: "Roboto";
+
+//Шрифты
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+//Переменные
+$minwidth: 320px;
+$mw: 1003px;
+
+
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+//Оболочка
+.wrapper{width: 100%; min-height: 100%; overflow: hidden;
+    &.loaded{}    
+}
+
+//Основная сетка
+.container{
+
+}
+
+//Подключение файлов стилей, страниц и элементов
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1194px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    //justify-content: space-between;
+}
+.logo {
+
+		&__img {
+		}
+}
+.search-form {
+    margin-left: 76px;
+    background: rgba(238, 238, 238, 0.71);
+    border-radius: 10px;
+    display: flex;
+    max-width: 620px;
+    height: 49px;
+    flex-grow: 1;
+    position: relative;
+        &__input {
+            background-color: transparent;
+            border: none;
+            width: 100%;
+            padding: 13px 20px;
+
+            font-family: 'Roboto', sans-serif;;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+        }
+
+		&__button {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            margin: auto;
+            right: 19px;
+            top: 14px;
+
+            cursor: pointer;
+		}
+
+		&__img {
+		}
+}
+.auth {
+    width: 99px;
+    height: 49px;
+    margin-left: auto;
+    margin-right: 31px;
+    font-family: 'Roboto', sans-serif;;
+	background: #EBEBEB;
+    border-radius: 50px;
+    padding: 16px 30px;
+    display: block;
+    transition: 0.3s;
+        &__login {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+
+            color: #000000;
+		}
+}
+
+.auth:hover {
+    background: #F66A15;
+}
+
+.shopping-cart {
+    width: 49px;
+    height: 49px;
+    border-radius: 24.5px;
+    background: #F66A15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &__img {
+
+    }
+    
+    &__notify {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #FFAF19;
+        padding: 5px;
+        right: 0;
+        bottom: 0;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8px;
+        line-height: 9px;
+        color: black;
+    }
+
+}
